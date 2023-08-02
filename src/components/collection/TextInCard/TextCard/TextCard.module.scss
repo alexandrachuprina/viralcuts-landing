@@ -1,0 +1,61 @@
+@import '../../../../styles/Queries.scss';
+@import '../../../../styles/Ui-kit.scss';
+
+.component {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  width: 30%;
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+}
+
+.heading {
+  h2 {
+    font-size: 28px;
+    @media (max-width: $xs) {
+      font-size: 20px;
+    }
+  }
+  margin: 50px 0;
+}
+.text {
+  width: 100%;
+
+  h2 {
+    font-size: 38px;
+    @media (max-width: $xs) {
+      font-size: 28px;
+    }
+  }
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  @media (min-width: $xxs) and (max-width: $lg) {
+    margin-top: 100px;
+  }
+}
+
+.heading_reversed {
+  h2 {
+    font-size: 40px;
+    @media (max-width: $xs) {
+      font-size: 28px;
+    }
+  }
+  margin: 50px 0;
+}
+
+.text_reversed {
+  p {
+    font-size: 28px;
+    @media (max-width: $xs) {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 9;
+}
+
+.component {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 100vw;
+  background: $light-pink;
+  border-bottom: 1px solid $black;
+  z-index: 9;
+  p {
+    font-size: 22px;
+    color: $black;
+  }
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    height: 8vh;
+  }
+ }
+

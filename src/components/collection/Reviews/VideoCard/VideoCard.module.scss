@@ -1,0 +1,37 @@
+@import '../../../../styles/Queries.scss';
+@import '../../../../styles/Ui-kit.scss';
+
+.card {
+  width: 225px;
+  min-width: 225px;
+  border-radius: 12px;
+
+  @media (max-width: $sm) {
+    width: 80px;
+    min-width: 80px;
+
+    height: 0px;
+    opacity: 0;
+  }
+  @media (min-width: $lg) {
+    width: 160px;
+    min-width: 160px;
+  }
+}
+
+.image {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+}
+
+.video {
+  border-radius: 12px;
+  width: 99%;
+}
+

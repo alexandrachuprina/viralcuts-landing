@@ -1,0 +1,107 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.component {
+  padding: 100px 0;
+  max-width: 1600px;
+  z-index: 1;
+  width: 100%;
+  grid-row-gap: 120px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+   padding: 0px 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin wrap {
+  position: absolute;
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.samparr_wrap {
+  @include wrap();
+  width: 160px;
+  height: 160px;
+  top: 24%;
+  left: 58%;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 80px;
+    height: 80px;
+  }
+}
+.bmazza_wrap {
+  @include wrap();
+  width: 120px;
+  height: 120px;
+  top: auto;
+  bottom: 0%;
+  left: 80%;
+  right: 0%;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 60px;
+    height: 60px;
+  }
+}
+.codiesanchez_wrap {
+  @include wrap();
+
+  width: 160px;
+  height: 160px;
+  top: 57%;
+  left: 32%;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 80px;
+    height: 80px;
+  }
+}
+.dankoe_wrap {
+  @include wrap();
+  width: 80px;
+  height: 80px;
+  top: 24%;
+  left: 83%;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.sahilbloom_wrap {
+  @include wrap();
+
+  width: 120px;
+  height: 120px;
+  top: 35%;
+  left: 15%;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 60px;
+    height: 60px;
+  }
+}

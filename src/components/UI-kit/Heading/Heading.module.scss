@@ -1,0 +1,14 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.component {
+  @include header_center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}

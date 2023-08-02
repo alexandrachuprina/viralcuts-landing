@@ -1,0 +1,103 @@
+$xs: 320px;
+$sm: 575px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+
+$black: #000000;
+$gray: #cec8bb;
+
+$light-green: #DFE8C0;
+$bright-green: #E4E458;
+$dark-green: #1e1e1e;
+$gray-green: #cec8bb; 
+
+$light-purple: #BCB4F4;
+
+$light-pink: #e8c0e4;
+
+$light-apricot: #ffede1;
+
+
+@mixin header_center {
+  h1 {
+    font-family: 'PP Neue Montreal', sans-serif; 
+    font-style: normal;
+    margin: 0;
+    font-size: 96px;
+    line-height: 90%;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-variation-settings: "wght" 700;
+    text-align: center;
+
+    @media (min-width: $xxs) {
+      font-size: 52px;
+    }
+    @media (min-width: $sm) {
+      font-size: 72px;
+    }
+    @media (min-width: $lg) {
+      font-size: 96px;
+    }
+  }
+}
+@mixin header_left {
+  h1 {
+    font-size: 96px;
+    line-height: 90%;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-variation-settings: "wght" 700;
+    
+    @media (min-width: $xxs) {
+      font-size: 52px;
+    }
+    @media (min-width: $sm) {
+      font-size: 72px;
+    }
+    @media (min-width: $lg) {
+      font-size: 96px;
+    }
+  }
+}
+@mixin subheader_center {
+  h1 {
+    font-size: 76px;
+    line-height: 90%;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-variation-settings: "wght" 700;
+    text-align: center;
+
+    @media (min-width: $xxs) {
+      font-size: 44px;
+    }
+    @media (min-width: $sm) {
+      font-size: 62px;
+    }
+    @media (min-width: $lg) {
+      font-size: 76px;
+    }
+  }
+}
+@mixin subheader_left {
+  h1 {
+    font-size: 76px;
+    line-height: 90%;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    font-variation-settings: "wght" 700;
+    
+    @media (min-width: $xxs) {
+      font-size: 44px;
+    }
+    @media (min-width: $sm) {
+      font-size: 62px;
+    }
+    @media (min-width: $lg) {
+      font-size: 76px;
+    }
+  }
+}

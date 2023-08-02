@@ -1,0 +1,22 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  @media (min-width: $xxs) and (max-width: $sm) {
+    height: 100px;
+  }
+}
+.logo {
+  width: 200px;
+  height: fit-content;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 120px;
+    height: 21px;
+  }
+}

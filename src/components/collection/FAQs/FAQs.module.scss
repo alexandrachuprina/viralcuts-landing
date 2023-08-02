@@ -1,0 +1,46 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: $gray-green;
+  border-radius: 32px;
+  padding: 40px;
+
+  @media (min-width: $xxs) and (max-width: $xl) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  h2 {
+    font-size: 76px;
+  }
+
+  @media (min-width: $xxs) and (max-width: $xl) {
+    width: 100%;
+    h2 {
+      font-size: 44px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.questions {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  @media (min-width: $xxs) and (max-width: $xl) {
+    width: 100%;
+  }
+}

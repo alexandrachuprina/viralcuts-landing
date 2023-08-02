@@ -1,0 +1,100 @@
+@import '../../../../styles/Queries.scss';
+@import '../../../../styles/Ui-kit.scss';
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 33%;
+
+  @media (min-width: $xxs) and (max-width: $lg) {
+    height: fit-content;
+    width: 100%;
+  }
+}
+.header {
+  margin-bottom: 100px;
+
+  h1, 
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+.text {
+  display: flex;
+  flex-direction: column;  
+}
+.button {
+  margin-top: 50px;
+}
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 32px;
+  padding: 28px;
+  height: 750px;
+  @media (min-width: $xxs) and (max-width: $sm) {
+    height: fit-content;
+  }
+  @media (min-width: $lg) {
+    height: 800px;
+  }
+  @media (min-width: $xl) {
+    height: 750px;
+  }
+}
+.none {
+  @include card();
+  
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px $gray-green;
+}
+.gray {
+  @include card();
+  background-color: $gray-green;
+}
+.black {
+  @include card();
+  background-color: $black;
+  h1,
+  h2,
+  p {
+    color: $light-apricot;
+  }
+  
+  .button {
+    p {
+      color: $black;
+    }
+  }
+}
+
+.special {
+  margin-top: 20px;
+  background-color: $bright-green;
+  width: fit-content;
+  height: 30px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: $black;
+    font-size: 16px;
+  }
+}

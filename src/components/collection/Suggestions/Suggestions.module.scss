@@ -1,0 +1,20 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.component {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    justify-content: space-between;
+  }
+}

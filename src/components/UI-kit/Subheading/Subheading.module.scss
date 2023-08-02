@@ -1,0 +1,15 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.component {
+  @include subheader_center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  // min-height: 120px;
+}

@@ -1,0 +1,127 @@
+@import '../../../../styles/Queries.scss';
+@import '../../../../styles/Ui-kit.scss';
+
+.sm {
+  width: 450px;
+  min-width: 450px;
+
+  @media (max-width: $lg) {
+    width: 300px;
+    min-width: 300px;
+  }
+}
+.medium {
+  width: 100%;
+}
+.large {
+  width: 100%;
+}
+.extra_large {
+  width: 100%;
+}
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 28px;
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $xxs) {
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: $sm) {
+    height: 320px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: $lg) {
+    height: 420px;
+  }
+  @media (min-width: $xl) {
+    height: 280px;
+  }
+}
+
+.dark_green {
+  @include card();
+  background-color: $dark-green;
+  h2,
+  p {
+    color: $light-apricot;
+  }
+}
+.light_green {
+  @include card();
+  background-color: $light-green;
+  h2,
+  p {
+    color: $black;
+  }
+}
+.light_pink {
+  @include card();
+  background-color: $light-pink;
+  h2,
+  p {
+    color: $black;
+  }
+}
+.light_apricot {
+  @include card();
+  background-color: $light-apricot;
+  h2,
+  p {
+    color: $light-apricot;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.followers {
+  margin-top: 10px;
+  background-color: $bright-green;
+  width: fit-content;
+  height: 30px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: $black;
+  }
+}
+
+
+

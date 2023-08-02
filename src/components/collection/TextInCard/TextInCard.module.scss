@@ -1,0 +1,61 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+@mixin card {
+  border-radius: 32px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  height: fit-content;
+  
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+}
+
+.light_pink {
+  @include card();
+  background-color: $light-pink;
+}
+.bright_green {
+  @include card();
+  background-color: $bright-green;
+}
+.light_green {
+  @include card();
+  background-color: $light-green;
+}
+
+.heading {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  margin-bottom: 120px;
+
+  @include subheader_left;
+
+  @media (max-width: $xs) {
+    width: 80%;
+  }
+  @media (max-width: $lg) {
+    margin-bottom: 0px;
+  }
+}
+.cards {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+
+  @media (min-width: $xxs) and (max-width: $lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 28px 0;
+    height: 250px;
+  }
+}
+.logo {
+  margin-right: 200px;
+  width: 200px;
+  height: fit-content;
+  @media (min-width: $xxs) and (max-width: $lg) {
+    margin-right: 0px;
+  }
+}
+.credits {
+  margin-right: 180px;
+  @media (min-width: $xxs) and (max-width: $xl) {
+    margin-right: 0px;
+  }
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: $bright-green;
+      border-radius: 32px;
+    }
+  }
+
+  @media (min-width: $xxs) and (max-width: $lg) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+  }
+  @media (min-width: $lg) and (max-width: $xl) {
+    p {
+      margin-right: 20px;
+    }
+  }
+  @media (min-width: $xl) {
+    width: fit-content;
+  }
+}

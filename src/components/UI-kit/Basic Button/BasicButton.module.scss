@@ -1,0 +1,69 @@
+@import '../../../styles/Ui-kit.scss';
+@import '../../../styles/Queries.scss';
+
+@mixin button {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 999px;
+  width: fit-content;
+  cursor: pointer;
+  p {
+    font-size: 20px;
+  }
+
+  @media (min-width: $xs) {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+
+.dark {
+  @include button;
+  background-color: $black;
+  border: 0px;
+  p {
+    color: $light-apricot;
+  }
+}
+.light {
+  @include button;
+  background-color: $light-apricot;
+  border: 0px;
+  p {
+    color: $black;
+  }
+}
+.green {
+  @include button;
+  background-color: $bright-green;
+  border: 0px;
+  p {
+    color: $black;
+  }
+}
+.none {
+  @include button;
+  background-color: transparent;
+  border: 1px solid $gray-green;
+  p {
+    color: $black;
+  }
+}
+
+.drawer {
+  @include button;
+  padding: 8px 16px;
+  height: 64px;
+  background-color: transparent;
+  border: 2px solid $light-apricot;
+
+  p {
+    color: $black;
+    font-size: 40px;
+  }
+  margin: 20px 0;
+}

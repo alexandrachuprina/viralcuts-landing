@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,400;1,500&display=swap');
+@import './styles/Ui-kit.scss';
+@import './styles/Queries.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1, 
+h2 {
+  font-family: 'PP Neue Montreal', sans-serif; 
+  margin: 0;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: $black;
+
+  &:visited,
+  &:hover,
+  &:active {
+    color: $black;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.card {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+}

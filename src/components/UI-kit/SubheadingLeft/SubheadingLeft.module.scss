@@ -1,0 +1,39 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.wrapper {
+  background-color: $light-apricot;
+}
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 50px 0;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    flex-direction: column;
+  }
+}
+.heading {
+  @include subheader_left();
+  width: 60%;
+
+  @media (min-width: $xxs) and (max-width: $sm) {
+    width: 100%;
+    h1 {
+      margin: 0 0 30px 0;
+    }
+  }
+}
+.additional {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+}

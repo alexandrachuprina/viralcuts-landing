@@ -1,0 +1,118 @@
+@import '../../../styles/Queries.scss';
+@import '../../../styles/Ui-kit.scss';
+
+.registration {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.password {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.eye {
+  all: unset;
+
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+.input {
+  position: relative;
+  all: unset;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  box-sizing: border-box;
+  border: 1px solid $gray;
+  border-radius: 999px;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  &:focus {
+    border: 2px solid $bright-green;
+  }
+}
+input[aria-invalid='true'] {
+  border: 2px solid $black;
+}
+input[aria-invalid='false'] {
+  border: 1px solid $gray;
+}
+.error {
+  font-size: 18px;
+  color: $light-apricot;
+  background-color: $dark-green;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 16px;
+}
+.offscreen {
+  display: none;
+}
+.rules {
+  margin-bottom: 20px;
+  top: 10px;
+  font-size: 18px;
+  color: $black;
+  background-color: $bright-green;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 16px;
+}
+.button {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 999px;
+  width: fit-content;
+  cursor: pointer;
+  p {
+    font-size: 20px;
+    color: $light-apricot;
+  }
+  background-color: $black;
+  border: 0px;
+
+  &:disabled {
+    background-color: $gray;
+  }
+
+  @media (min-width: $xs) {
+    p {
+      font-size: 18px;
+    }
+  }
+}

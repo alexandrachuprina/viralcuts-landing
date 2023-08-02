@@ -1,0 +1,8 @@
+@import '../styles/Ui-kit.scss';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+  background-color: $light-apricot;
+}
