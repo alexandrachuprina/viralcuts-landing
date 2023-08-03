@@ -13,4 +13,10 @@
     flex-direction: column;
     row-gap: 80px;
   }
+  @media ($sm < width < $lg) {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    justify-content: space-between;
+    row-gap: 60px;
+  }
 }

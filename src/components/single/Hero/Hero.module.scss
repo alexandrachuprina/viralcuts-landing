@@ -36,7 +36,7 @@
   z-index: 0;
   overflow: hidden;
 
-  @media (min-width: $xxs) and (max-width: $sm) {
+  @media (width < 635px) {
     height: 0px;
     width: 0px;
   }
@@ -48,7 +48,7 @@
   z-index: 0;
   overflow: hidden;
 
-  @media (min-width: $xxs) and (max-width: $sm) {
+  @media (width < 635px) {
     height: 0px;
     width: 0px;
   }

@@ -8,7 +8,7 @@
   align-items: center;
   min-height: 100px;
 
-  @media (min-width: $lg) {
+  @media (min-width: 1000px) {
     display: none;
   }
 }
@@ -87,7 +87,7 @@
   padding: 28px 0;
   height: 140px;
 
-  @media (max-width: $lg) {
+  @media (max-width: 1000px) {
     display: none;
   }
 }

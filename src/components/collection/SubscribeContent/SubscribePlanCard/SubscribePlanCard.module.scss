@@ -18,7 +18,10 @@
 }
 .large {
   width: 100%;
-  min-width: 400px;
+  @media (width > sm) {
+
+    min-width: 400px;
+  }
 }
 .disabled {
   @include card();
