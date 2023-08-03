@@ -5,41 +5,29 @@
   background-color: $light-apricot;
   height: fit-content;
 }
-.grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.component {
-  @media (min-width: $xxs) and (max-width: $sm) {
+.cards {
+  @media (width < $sm) {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
   }
-  @media (min-width: $sm) and (max-width: $lg) {
+  @media ($sm < width < $lg) {
     display: grid;
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(2, 49%);
     row-gap: 16px;
-    column-gap: 16px;
-    justify-items: center;
+    justify-content: space-between;
   }
   @media (min-width: $lg) {
     display: grid;
     grid-template-columns: repeat(3, 32%);
-    justify-content: center;
+    justify-content: space-between;
     row-gap: 16px;
-    column-gap: 22px;
     justify-items: center;
   }
   @media (min-width: $xl) {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    width: 90%;
-    align-self: center;
-    justify-content: center;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
     row-gap: 16px;
-    column-gap: 22px;
-    justify-items: center;
   }
 }

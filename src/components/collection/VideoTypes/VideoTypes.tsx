@@ -18,8 +18,8 @@ const VideoTypes = (props: Props) => {
     <div className={styles.wrapper}>
       <Row justify={"center"}>
         <Col xs={23} sm={23} flex={"1600px"}>
-          <div className={styles.grid}>
-            <div className={styles.component}>
+          {/* <div className={styles.grid}> */}
+            <div className={styles.cards}>
               {props.cards.map((elem) => (
                 <TypeCard
                   key={elem.id}
@@ -28,7 +28,7 @@ const VideoTypes = (props: Props) => {
                 />
               ))}
             </div>
-          </div>
+          {/* </div> */}
         </Col>
       </Row>
     </div>

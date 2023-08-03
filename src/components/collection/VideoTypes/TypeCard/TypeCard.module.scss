@@ -2,6 +2,8 @@
 @import '../../../../styles/Ui-kit.scss';
 
 .component {
+  width: 100%;
+
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -22,11 +24,11 @@
   @media (min-width: $xxs) and (max-width: $sm) {
     height: fit-content;
   }
-  @media (min-width: $sm) and (max-width: $xl) {
+  @media (min-width: $sm) and (max-width: $lg) {
     height: 200px;
   }
   @media (min-width: $xl) {
-    width: 320px;
+    height: 230px;
   }
 }
 .heading {
