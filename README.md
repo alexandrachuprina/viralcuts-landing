@@ -2,7 +2,7 @@
 
 Проект представляет собой сайт-визитку компании по созданию видео Viralcuts.
 
-Деплой: https://viralcuts-clone2.netlify.app/
+Деплой: https://viralcuts-clone.netlify.app/
 
 ### Технологический стек
 1. React.js
