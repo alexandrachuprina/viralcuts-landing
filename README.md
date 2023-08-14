@@ -13,5 +13,4 @@
 7. Antd
 8. Frame Motion
 
-### Дизайн 
-[ OFF MENU ](https://offmenu.design/)
+Дизайн: [ OFF MENU ](https://offmenu.design/)
