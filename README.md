@@ -4,7 +4,7 @@
 
 Деплой: https://viralcuts-clone.netlify.app/
 
-### Технологический стек
+## Технологический стек
 1. React.js
 2. TypeScript
 3. Redux Toolkit
@@ -13,4 +13,5 @@
 7. Antd
 8. Frame Motion
 
-Дизайн: [ OFF MENU ](https://offmenu.design/)
+## Дизайн
+* [ OFF MENU ](https://offmenu.design/)
